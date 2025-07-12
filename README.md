@@ -1,4 +1,5 @@
 # POP! Quiz Game
+![POP! prototype](images/Prototype.png)
 
 **POP! By Fatima** is a fun and interactive quiz game where users can test their knowledge in four exciting categories:
 - 🎵 Music  
@@ -10,7 +11,7 @@ Each quiz includes multiple-choice questions to challenge what you know — from
 
 ---
 
-## 🚀 Features
+## Features
 
 - Easy-to-use and beginner-friendly UI
 - 4 fun quiz categories
@@ -21,7 +22,7 @@ Each quiz includes multiple-choice questions to challenge what you know — from
 
 ---
 
-## 🖥️ How to Use
+## How to Use
 
 1. Choose a category from the home screen.
 2. Answer each question by clicking one of the four answer buttons.
@@ -31,7 +32,7 @@ Each quiz includes multiple-choice questions to challenge what you know — from
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML
 - CSS
@@ -39,7 +40,7 @@ Each quiz includes multiple-choice questions to challenge what you know — from
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```plaintext
 /POP-BY-FATIMA
@@ -49,3 +50,4 @@ Each quiz includes multiple-choice questions to challenge what you know — from
 ├── app.js           # Game logic and interactions
 |── README.md        # You're reading it!
 └── pseudocode.md    # Gameplay pseudocode 
+
