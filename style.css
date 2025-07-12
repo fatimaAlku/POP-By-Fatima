@@ -63,7 +63,7 @@ p {
 }
 
 .question-container {
-    max-width: 650px;
+    max-width: 850px;
     margin: 170px auto 60px;
     padding: 40px;
     background-color: white;
@@ -74,7 +74,7 @@ p {
 .options {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     padding: 10px;
     margin-top: 25px;
 }
@@ -90,8 +90,7 @@ p {
 
 .score-container {
     margin-top: 44px;
-    padding: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
 }
 
 .score {
