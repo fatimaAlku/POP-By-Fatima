@@ -7,21 +7,29 @@ body{
     text-align: center;
 }
 
+p.instructions {
+    color: #FF69B4;
+    font-size: 1.4em;
+    margin: 40px 0 15px;
+    font-weight: bold;
+}
+
 .container {
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
     margin: auto;
 }
 
 
-h1 {
+/*h1 {
     color: black;
     font-size: 2.5em;
     margin-bottom: 15px;
     text-align: center;
     
 }
+*/
 
 .category-container {
     display: flex;
@@ -74,9 +82,9 @@ p {
 .options {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
     padding: 10px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .option {
@@ -89,15 +97,18 @@ p {
 }
 
 .score-container {
-    margin-top: 44px;
-    padding: 15px; 
+    margin: 40px 600px 40px;
+    padding: 1px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .score {
     font-size: 1.3em; 
-    color: black; 
-    font-weight: bold;
-    margin: 0; 
+    color: #FF69B4; 
+    font-weight: bold; 
+    
 }
 
 .reset-button {

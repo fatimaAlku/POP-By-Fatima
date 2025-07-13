@@ -54,6 +54,7 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 
+// Function to display the current question and options
 function displayQuestion() {
     const questionEle = document.querySelector('.question-container h2');
     const optionEle = document.querySelector('.options');
@@ -72,33 +73,38 @@ function displayQuestion() {
     document.querySelector('.score').textContent = "Score: " + score;
 }
 
-
-//fix here--------------
+// Function to handle answer selection
 function selectAnswer(selectedOption) {
     if (selectedOption === questions[currentQuestionIndex].answer) {
-        score++;
-       document.querySelector('.score').textContent = "Correct! Your score: " + score;
+       score++;
+       changeColor(); // Change color of the answer
+       document.querySelector('.score').textContent = "Correct! Your score is: " + score;
+       setTimeout(nextQuestion, 1200); // Move to next question after 1 and a half seconds
     } else {
-        document.querySelector('.score').textContent = "Wrong answer! Your score: " + score;
+        document.querySelector('.score').textContent = "Wrong answer! Your score is: " + score;
+        setTimeout(nextQuestion, 1300); // Move to next question after 1 and a half seconds
     }
 }
 
-//fix here--------------
+
+// Function to move to the next question
 function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         displayQuestion();
-    } else {
+    } else if (currentQuestionIndex === questions.length) {
         document.querySelector('.score').textContent = "Quiz over! Your final score: " + score;
-        resetQuiz();
+        document.querySelector('.next-button').disabled = true; // Disable next button
     }
 }
 
+// Function to reset the quiz
 function resetQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     displayQuestion();
 }
+
 
 
 displayQuestion();
