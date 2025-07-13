@@ -81,6 +81,7 @@ function selectAnswer(selectedOption) {
        document.querySelector('.score').textContent = "Correct! Your score is: " + score;
        setTimeout(nextQuestion, 1200); // Move to next question after 1 and a half seconds
     } else {
+        handleIncorrectAnswer(); // Change color of the answer
         document.querySelector('.score').textContent = "Wrong answer! Your score is: " + score;
         setTimeout(nextQuestion, 1300); // Move to next question after 1 and a half seconds
     }
@@ -98,6 +99,7 @@ function nextQuestion() {
     }
 }
 
+
 // Function to reset the quiz
 function resetQuiz() {
     currentQuestionIndex = 0;
@@ -106,5 +108,30 @@ function resetQuiz() {
 }
 
 
+// Function to change the background color of the answer
+function changeColor() {
+    const options = document.querySelectorAll('.option');
+    options.forEach(option => {
+        if (option.textContent === questions[currentQuestionIndex].answer) {
+            option.style.backgroundColor = 'lightgreen'; // Correct answer
+        } else  {
+            option.style.backgroundColor = 'lightcoral'; // Wrong answer
+        } 
+        
+    });
+}
+
+// Function if chosen answer is incorrect
+function handleIncorrectAnswer() {
+    const options = document.querySelectorAll('.option');
+    options.forEach(option => {
+        if (option.textContent === questions[currentQuestionIndex].answer) {
+            option.style.backgroundColor = 'lightgreen'; // Correct answer
+        } else  {
+            option.style.backgroundColor = 'lightcoral'; // Wrong answer
+        } 
+        
+    });
+}
 
 displayQuestion();
