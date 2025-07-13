@@ -1,7 +1,7 @@
 # POP! Quiz Game
 ![POP! prototype](images/Prototype.png)
 
-**POP! By Fatima** is a fun and interactive quiz game where users can test their knowledge in four exciting categories:
+**POP By Fatima** is a fun and interactive quiz game where users can test their knowledge in four exciting categories:
 - 🎵 Music  
 - 🏎️ Formula 1  
 - 🎬 Movies  

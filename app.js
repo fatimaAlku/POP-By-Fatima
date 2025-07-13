@@ -55,26 +55,35 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function displayQuestion() {
-    const questionElement = document.querySelector('.question-container h2');
-    const optionsElement = document.querySelector('.options');
+    const questionEle = document.querySelector('.question-container h2');
+    const optionEle = document.querySelector('.options');
 
-    questionElement.textContent = questions[currentQuestionIndex].question;
-    optionsElement.innerHTML = '';
+    questionEle.textContent = questions[currentQuestionIndex].question;
+    optionEle.innerHTML = '';
 
     questions[currentQuestionIndex].options.forEach(option => {
-        const button = document.createElement('button');
-        button.textContent = option;
-        button.className = 'option';
-        button.onclick = () => selectAnswer(option);
-        optionsElement.appendChild(button);
+        const listOption = document.createElement('listOption');
+        listOption.textContent = option;
+        listOption.className = 'option';
+        listOption.onclick = () => selectAnswer(option);
+        optionEle.appendChild(listOption);
     });
 
-    document.querySelector('.result').textContent = "Score: " + score;
+    document.querySelector('.score').textContent = "Score: " + score;
 }
 
 
+//fix here--------------
+function selectAnswer(selectedOption) {
+    if (selectedOption === questions[currentQuestionIndex].answer) {
+        score++;
+       document.querySelector('.score').textContent = "Correct! Your score: " + score;
+    } else {
+        document.querySelector('.score').textContent = "Wrong answer! Your score: " + score;
+    }
+}
 
-
+//fix here--------------
 function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
