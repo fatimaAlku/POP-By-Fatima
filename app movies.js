@@ -1,55 +1,57 @@
 const questions = [
     {
-        question: "Who won the 2020 Formula 1 World Championship?",
-        options: ["Max Verstappen", "Lewis Hamilton", "Sebastian Vettel", "Charles Leclerc"],
-        answer: "Lewis Hamilton"
+        question: "Which movie features the quote, 'I'll be back'?",
+        options: ["Die Hard", "The Terminator", "Predator", "RoboCop"],
+        answer: "The Terminator"
     },
     {
-        question: "What does DRS stand for?",
-        options: ["Drag Reduction System", "Downforce Regulation System", "Dynamic Racing System", "Drive Record System"],
-        answer: "Drag Reduction System"
+        question: "Who directed the movie 'Inception'?",
+        options: ["Steven Spielberg", "James Cameron", "Christopher Nolan", "Martin Scorsese"],
+        answer: "Christopher Nolan"
     },
     {
-        question: "Which Grand Prix takes place on an Artificial island?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Abu Dhabi"
+        question: "Which actress played Hermione Granger in the Harry Potter series?",
+        options: ["Emma Roberts", "Emma Stone", "Emma Watson", "Emily Blunt"],
+        answer: "Emma Watson"
     },
     {
-        question: "Which team has secured the most Constructors' Championships?",
-        options: ["Mercedes", "Ferrari", "Red Bull", "McLaren"],
-        answer: "Ferrari"
+        question: "Which movie won Best Picture at the Oscars in 2020?",
+        options: ["1917", "Joker", "Parasite", "Ford v Ferrari"],
+        answer: "Parasite"
     },
     {
-        question: "Which driver has the most wins in Formula 1 history?",
-        options: ["Lewis Hamilton", "Michael Schumacher", "Sebastian Vettel", "Alain Prost"],
-        answer: "Lewis Hamilton"
+        question: "Who played Jack Dawson in 'Titanic'?",
+        options: ["Leonardo DiCaprio", "Brad Pitt", "Matt Damon", "Orlando Bloom"],
+        answer: "Leonardo DiCaprio"
     },
     {
-        question: "Which team ended Mercedes Unbeaten Run in the hybrid era in 2018?",
-        options: ["Mercedes", "Ferrari", "Red Bull", "McLaren"],
-        answer: "Red Bull"
+        question: "What movie features the quote, 'Why so serious?'",
+        options: ["The Dark Knight", "Joker", "Batman Begins", "Suicide Squad"],
+        answer: "The Dark Knight"
     },
     {
-        question: "What color is the flag used to indicate a slow moving car on the track?",
-        options: ["Yellow", "Red", "Blue", "Green"],
-        answer: "Blue"
+        question: "Which film franchise features a character named Dominic Toretto?",
+        options: ["Mission: Impossible", "Transformers", "Fast & Furious", "John Wick"],
+        answer: "Fast & Furious"
     },
     {
-        question: "What F1 grand prix is held at night?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Singapore"
+        question: "Which animated movie features the song 'Let It Go'?",
+        options: ["Tangled", "Moana", "Frozen", "Encanto"],
+        answer: "Frozen"
     },
     {
-        question: "How many points are awarded for a race win in Formula 1?",
-        options: ["25", "18", "20", "22"],
-        answer: "25"
+        question: "In which movie did Tom Hanks play a man stranded on an island?",
+        options: ["The Terminal", "Cast Away", "Captain Phillips", "Sully"],
+        answer: "Cast Away"
     },
     {
-        question: "Which F1 grand prix takes place in the streets of Monte Carlo?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Monaco"
-    },
+        question: "Which Marvel movie first featured the character Black Panther?",
+        options: ["Black Panther", "Avengers: Endgame", "Captain America: Civil War", "Iron Man 3"],
+        answer: "Captain America: Civil War"
+    }
 ];
+
+
 
 let currentQuestionIndex = 0;
 let score = 0;

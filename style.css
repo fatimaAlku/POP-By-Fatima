@@ -10,7 +10,7 @@ h1 {
     color: #FF69B4;
     font-size: 2.5em;
     margin-bottom: 15px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 .container {
@@ -110,7 +110,7 @@ p {
 .reset-button {
     background-color: #FF69B4;
     color: white;
-    padding: 13px 50px;
+    padding: 13px 35px;
     border: none;
     border-radius: 5px;
     font-size: 0.9em;
@@ -121,6 +121,15 @@ p {
     background-color: #FF69B4;
     color: white;
     padding: 13px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.home-button {
+    background-color: #FF69B4;
+    color: white;
+    padding: 13px 45px;
     border: none;
     border-radius: 5px;
     font-size: 0.9em;
@@ -148,6 +157,12 @@ p {
     background-color: white;
 }
 
+#startScreen h1 {
+    color: #FF69B4;
+    font-size: 1.8em;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
 
 .f1Instructions {
     color: #FF69B4;
@@ -159,12 +174,11 @@ p {
 #startQuizBtn {
     background-color: #FF69B4;
     color: white;
-    padding: 9px 30px;
+    padding: 9px 70px;
     border: none;
     border-radius: 5px;
     font-size: 1.3em;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     margin: 15px 0 12px;
-    max-width: 200px;
 }

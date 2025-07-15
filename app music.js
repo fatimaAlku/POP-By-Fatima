@@ -1,55 +1,56 @@
 const questions = [
     {
-        question: "Who won the 2020 Formula 1 World Championship?",
-        options: ["Max Verstappen", "Lewis Hamilton", "Sebastian Vettel", "Charles Leclerc"],
-        answer: "Lewis Hamilton"
+        question: "Who is known as the 'King of Pop'?",
+        options: ["Elvis Presley", "Michael Jackson", "Prince", "Justin Timberlake"],
+        answer: "Michael Jackson"
     },
     {
-        question: "What does DRS stand for?",
-        options: ["Drag Reduction System", "Downforce Regulation System", "Dynamic Racing System", "Drive Record System"],
-        answer: "Drag Reduction System"
+        question: "Which artist holds the record for most Grammy Awards won?",
+        options: ["Beyoncé", "Taylor Swift", "Kanye West", "Adele"],
+        answer: "Beyoncé"
     },
     {
-        question: "Which Grand Prix takes place on an Artificial island?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Abu Dhabi"
+        question: "Which band released the album 'Abbey Road' in 1969?",
+        options: ["The Rolling Stones", "The Beatles", "Pink Floyd", "Queen"],
+        answer: "The Beatles"
     },
     {
-        question: "Which team has secured the most Constructors' Championships?",
-        options: ["Mercedes", "Ferrari", "Red Bull", "McLaren"],
-        answer: "Ferrari"
+        question: "What hit song by Luis Fonsi and Daddy Yankee featured Justin Bieber in its remix?",
+        options: ["Bailando", "Despacito", "Gasolina", "Mi Gente"],
+        answer: "Despacito"
     },
     {
-        question: "Which driver has the most wins in Formula 1 history?",
-        options: ["Lewis Hamilton", "Michael Schumacher", "Sebastian Vettel", "Alain Prost"],
-        answer: "Lewis Hamilton"
+        question: "Who sang the 2021 global hit 'drivers license'?",
+        options: ["Billie Eilish", "Olivia Rodrigo", "Selena Gomez", "Doja Cat"],
+        answer: "Olivia Rodrigo"
     },
     {
-        question: "Which team ended Mercedes Unbeaten Run in the hybrid era in 2018?",
-        options: ["Mercedes", "Ferrari", "Red Bull", "McLaren"],
-        answer: "Red Bull"
+        question: "Which rock band was Freddie Mercury the lead singer of?",
+        options: ["The Rolling Stones", "Led Zeppelin", "Queen", "The Who"],
+        answer: "Queen"
     },
     {
-        question: "What color is the flag used to indicate a slow moving car on the track?",
-        options: ["Yellow", "Red", "Blue", "Green"],
-        answer: "Blue"
+        question: "Which pop star’s real name is Stefani Joanne Angelina Germanotta?",
+        options: ["Lady Gaga", "Madonna", "Katy Perry", "Dua Lipa"],
+        answer: "Lady Gaga"
     },
     {
-        question: "What F1 grand prix is held at night?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Singapore"
+        question: "Which song starts with the lyric 'Hello, it's me'?",
+        options: ["Someone Like You", "Easy On Me", "Rolling in the Deep", "Hello"],
+        answer: "Hello"
     },
     {
-        question: "How many points are awarded for a race win in Formula 1?",
-        options: ["25", "18", "20", "22"],
-        answer: "25"
+        question: "Which artist made history as the first rapper to win the Pulitzer Prize for Music?",
+        options: ["Kendrick Lamar", "Jay-Z", "Drake", "Nas"],
+        answer: "Kendrick Lamar"
     },
     {
-        question: "Which F1 grand prix takes place in the streets of Monte Carlo?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Monaco"
-    },
+        question: "Who topped the Billboard Hot 100 with 'Anti-Hero' in 2022?",
+        options: ["Ariana Grande", "Dua Lipa", "Taylor Swift", "SZA"],
+        answer: "Taylor Swift"
+    }
 ];
+
 
 let currentQuestionIndex = 0;
 let score = 0;

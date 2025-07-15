@@ -1,55 +1,58 @@
 const questions = [
     {
-        question: "Who won the 2020 Formula 1 World Championship?",
-        options: ["Max Verstappen", "Lewis Hamilton", "Sebastian Vettel", "Charles Leclerc"],
-        answer: "Lewis Hamilton"
+        question: "Which celebrity famously slapped Chris Rock at the 2022 Oscars?",
+        options: ["Will Smith", "Dwayne Johnson", "Kanye West", "Jason Momoa"],
+        answer: "Will Smith"
     },
     {
-        question: "What does DRS stand for?",
-        options: ["Drag Reduction System", "Downforce Regulation System", "Dynamic Racing System", "Drive Record System"],
-        answer: "Drag Reduction System"
+        question: "Who broke the record for most Instagram followers in 2024?",
+        options: ["Lionel Messi", "Selena Gomez", "Cristiano Ronaldo", "Kim Kardashian"],
+        answer: "Cristiano Ronaldo"
     },
     {
-        question: "Which Grand Prix takes place on an Artificial island?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Abu Dhabi"
+        question: "What word did Oxford Dictionaries name as the 2023 Word of the Year?",
+        options: ["Goblin mode", "Rizz", "Cheugy", "Slay"],
+        answer: "Rizz"
     },
     {
-        question: "Which team has secured the most Constructors' Championships?",
-        options: ["Mercedes", "Ferrari", "Red Bull", "McLaren"],
-        answer: "Ferrari"
+        question: "Who wore the iconic meat dress at the 2010 MTV VMAs?",
+        options: ["Lady Gaga", "Nicki Minaj", "Rihanna", "Katy Perry"],
+        answer: "Lady Gaga"
     },
     {
-        question: "Which driver has the most wins in Formula 1 history?",
-        options: ["Lewis Hamilton", "Michael Schumacher", "Sebastian Vettel", "Alain Prost"],
-        answer: "Lewis Hamilton"
+        question: "Which celebrity starred in both 'Barbie' (2023) and 'Suicide Squad' (2016)?",
+        options: ["Scarlett Johansson", "Margot Robbie", "Gal Gadot", "Zendaya"],
+        answer: "Margot Robbie"
     },
     {
-        question: "Which team ended Mercedes Unbeaten Run in the hybrid era in 2018?",
-        options: ["Mercedes", "Ferrari", "Red Bull", "McLaren"],
-        answer: "Red Bull"
+        question: "What viral Netflix series featured the game 'Red Light, Green Light'?",
+        options: ["Money Heist", "Squid Game", "Stranger Things", "The Circle"],
+        answer: "Squid Game"
     },
     {
-        question: "What color is the flag used to indicate a slow moving car on the track?",
-        options: ["Yellow", "Red", "Blue", "Green"],
-        answer: "Blue"
+        question: "Who headlined the Super Bowl halftime show in 2023?",
+        options: ["The Weeknd", "Beyoncé", "Rihanna", "Dr. Dre"],
+        answer: "Rihanna"
     },
     {
-        question: "What F1 grand prix is held at night?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Singapore"
+        question: "What is the name of Taylor Swift's devoted fanbase?",
+        options: ["Swifties", "Lovelies", "Stans", "Taysters"],
+        answer: "Swifties"
     },
     {
-        question: "How many points are awarded for a race win in Formula 1?",
-        options: ["25", "18", "20", "22"],
-        answer: "25"
+        question: "Which artist collaborated with Crocs and McDonald's in viral campaigns?",
+        options: ["Post Malone", "Doja Cat", "BTS", "Travis Scott"],
+        answer: "Travis Scott"
     },
     {
-        question: "Which F1 grand prix takes place in the streets of Monte Carlo?",
-        options: ["Monaco", "Singapore", "Abu Dhabi", "Melbourne"],
-        answer: "Monaco"
-    },
+        question: "Which YouTuber became the most-subscribed channel in the world in 2023?",
+        options: ["MrBeast", "PewDiePie", "T-Series", "Nastya"],
+        answer: "MrBeast"
+    }
 ];
+
+
+
 
 let currentQuestionIndex = 0;
 let score = 0;
