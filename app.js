@@ -54,6 +54,22 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 
+// Get DOM elements
+const bgMusic = document.getElementById("backgroundMusic");
+const startBtn = document.getElementById("startQuizBtn");
+const startScreen = document.getElementById("startScreen");
+const quizSection = document.getElementById("quizSection");
+
+
+// Start the background music when the page loads
+startBtn.addEventListener("click", () => {
+  bgMusic.play().catch(err => console.log("Audio error:", err));
+  startScreen.style.display = "none";
+  quizSection.style.display = "block";
+  displayQuestion();
+});
+
+
 // Function to display the current question and options
 function displayQuestion() {
     const questionEle = document.querySelector('.question-container h2');
@@ -79,11 +95,11 @@ function selectAnswer(selectedOption) {
        score++;
        changeColor(); // Change color of the answer
        document.querySelector('.score').textContent = "Correct! Your score is: " + score;
-       setTimeout(nextQuestion, 1200); // Move to next question after 1 and a half seconds
+       setTimeout(nextQuestion, 1100); // Move to next question after 1 and a 1 seconds
     } else {
         handleIncorrectAnswer(); // Change color of the answer
         document.querySelector('.score').textContent = "Wrong answer! Your score is: " + score;
-        setTimeout(nextQuestion, 1300); // Move to next question after 1 and a half seconds
+        setTimeout(nextQuestion, 1200); // Move to next question after 1 and a 2 seconds
     }
 }
 
@@ -116,10 +132,10 @@ function changeColor() {
             option.style.backgroundColor = 'lightgreen'; // Correct answer
         } else  {
             option.style.backgroundColor = 'lightcoral'; // Wrong answer
-        } 
-        
+        }   
     });
 }
+
 
 // Function if chosen answer is incorrect
 function handleIncorrectAnswer() {
@@ -133,5 +149,3 @@ function handleIncorrectAnswer() {
         
     });
 }
-
-displayQuestion();

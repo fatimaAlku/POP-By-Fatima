@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="quiz">
+
+    <div id ="startScreen">
+        <h1>F1 Quiz</h1>
+        <p class="f1Instructions">Test your knowledge of Formula 1.</p>
+        <button id="startQuizBtn">Start Quiz</button>
+    </div>
+
+
+    <div class="quiz" id="quizSection" style="display: none;">
 
         <div class="question-container">
 
@@ -16,11 +24,11 @@
             <div class="options">
             
             </div>
-            
+
         </div>
 
         <button class="reset-button" onclick="resetQuiz()">Reset</button>
-        <button class="next-button" onclick="nextQuestion()">Next</button>
+        <button class="next-button" onclick="nextQuestion()">Skip</button>
         
         <div class="score-container">
         <h3 class="score">Score: 0</h3>
@@ -28,8 +36,14 @@
 
     </div>
 
-    <script src="./app.js"></script>
     
+
+    <audio id="backgroundMusic" src="sound/flash-quiz-loop.mp3" preload="auto" loop></audio>
+
+    
+    <script src="./app.js"></script>
+
+
 </body>
 </html>
 
