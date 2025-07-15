@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id ="startScreen">
+        <h1>GA Quiz</h1>
+        <p class="f1Instructions">Test your knowledge of General Assembly.</p>
+        <button id="startQuizBtn">Start Quiz</button>
+    </div>
+
+
+    <div class="quiz" id="quizSection" style="display: none;">
+
+        <div class="question-container">
+
+        <h2>Who won the 2020 Formula 1 World Championship?</h2>
+        
+            <div class="options">
+            
+            </div>
+
+        </div>
+
+        <button class="reset-button" onclick="resetQuiz()">PlayAgain</button>
+        <button class="next-button" onclick="nextQuestion()">Skip</button>
+        <button class="home-button" onclick="location.href='./index.html'">Home</button>
+
+        <div class="score-container">
+        <h3 class="score">Score: 0</h3>
+        </div>
+
+    </div>
+
+    
+
+    <audio id="backgroundMusic" src="sound/flash-quiz-loop.mp3" preload="auto" loop></audio>
+
+
+    <script src="./app ga.js"></script>
+
+
+</body>
+</html>
+
