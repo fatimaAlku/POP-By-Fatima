@@ -1,12 +1,13 @@
 START the game
 
-DISPLAY the title: "POP! - Test Your Knowledge and Have Fun with Every Question!"
+DISPLAY the title: "POP Quiz - Click on a category to start playing!"
 
-DISPLAY four categories:
+DISPLAY five categories:
     1. MUSIC
     2. F1
     3. MOVIES
     4. POP CULTURE
+    5. GA
 
 WAIT for the player to CLICK on a category
 SAVE the selected category
@@ -22,32 +23,39 @@ WHILE currentQuestion is less than total number of questions
 
     WAIT for the player to CLICK on one of the options
 
-    IF the clicked option is the correct answer
+    IF the selected option is correct
         INCREASE score by 1
+    ELSE
+        DO NOT change score
     END IF
 
-    WAIT for the player to CLICK "Next" button
-
-    GO to the next question
     INCREASE currentQuestion by 1
+    IF currentQuestion < total number of questions
+        DISPLAY next question
+    END IF
 END WHILE
 
-WHEN all questions are answered
-    DISPLAY the player’s final score
-    DISPLAY a message like “Great job!” or “Try again!”
+DISPLAY the player’s final score
 
-    SHOW two buttons:
-        1. "Reset" - starts the same quiz again
-        2. "Home" - goes back to the category selection screen
+IF score >= 6
+    DISPLAY message: “You won”
+ELSE
+    DISPLAY message: “You lost”
+END IF
 
-    WAIT for the player to CLICK on a button
+SHOW two buttons:
+    1. "PlayAgain" - restart quiz in same category
+    2. "Home" - go back to category selection screen
 
-    IF "Reset" is clicked
-        SET score = 0
-        SET currentQuestion = 0
-        RELOAD questions from the same category
-    ELSE IF "Home" is clicked
-        GO back to the category selection screen
-    END IF
+WAIT for the player to CLICK a button
+
+IF "Play Again" is clicked
+    SET score = 0
+    SET currentQuestion = 0
+    RELOAD questions from the same category
+    RESTART quiz
+ELSE IF "Home" is clicked
+    RETURN to category selection screen
+END IF
 
 END
