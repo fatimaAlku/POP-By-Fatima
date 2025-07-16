@@ -6,7 +6,7 @@
 - Formula 1  
 - Movies  
 - Pop Culture
-- GA
+- General Assembly
 
 Each quiz includes multiple-choice questions to challenge what you know — from classic tunes to fast-paced F1 history, iconic films, celebrity trends and GA.
 
@@ -21,6 +21,12 @@ I created POP! during my time at General Assembly’s Software Engineering Bootc
 ## Deployed link
 
 https://pop-by-fatima.surge.sh/
+
+---
+
+## Trello link
+
+https://trello.com/invite/b/686e63caf1df01580217c5a5/ATTIa26d61458ab1e07f5db11d8b1cfa2e71A4C80252/pop
 
 ## Features
 
@@ -48,6 +54,13 @@ https://pop-by-fatima.surge.sh/
 - HTML
 - CSS
 - JavaScript
+
+---
+
+## Resources Used
+
+- mdn web docs
+- W3schools
 
 ---
 
