@@ -125,6 +125,8 @@ function resetQuiz() {
     score = 0;
     displayQuestion();
     document.querySelector('.next-button').disabled = false; // Enable next button
+    bgMusic.currentTime = 0; // Reset background music to the start
+    bgMusic.play(); // Play background music again
 }
 
 
