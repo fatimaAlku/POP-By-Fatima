@@ -5,7 +5,7 @@ const questions = [
         answer: "2023"
     },
     {
-        question: "Who loves kunafa bites the most?",
+        question: "Who loves شعيريه bites the most?",
         options: ["Hussain Folath", "Mohammed Adel", "Hasan Alsebea", "Fatima Alzaki"],
         answer: "Hussain Folath"
     },
