@@ -59,7 +59,7 @@ const questions = [
         options: ["Mahmood Fadhel", "Mohammed Ali", "Abdullah Alshaikh", "Aqeel Muslem"],
         answer: "Abdullah Alshaikh"
     },
-     {
+    {
         question: "Who came to bibf at 2 am because he forgot his charger?",
         options: ["Husain Folath", "Yaseen Alzeiny", "Husain Saleh", "Hussain Alkaabi"],
         answer: "Husain Saleh"
