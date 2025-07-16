@@ -111,7 +111,8 @@ function nextQuestion() {
     if (currentQuestionIndex < questions.length) {
         displayQuestion();
     } else if (currentQuestionIndex === questions.length) {
-        document.querySelector('.score').textContent = "Quiz over! Your final score: " + score;
+        document.querySelector('.score').textContent = "Quiz over! Your final score: " + score + ",";
+
         document.querySelector('.next-button').disabled = true; // Disable next button
         winOrLose(); // Check win or lose condition
     }
@@ -123,6 +124,7 @@ function resetQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     displayQuestion();
+    document.querySelector('.next-button').disabled = false; // Enable next button
 }
 
 
@@ -155,11 +157,13 @@ function handleIncorrectAnswer() {
 
 // win & lose logic
 function winOrLose() {
-    if ( score >= 6) {
-        document.querySelector('.score').textContent = "Congratulations! You won.";
+    if ( score >= 7) {
+        const previousText = document.querySelector('.score').textContent;
+        document.querySelector('.score').textContent = previousText + " Congratulations! You won.";
     }
     else {
-        document.querySelector('.score').textContent = "You lost :( Better luck next time.";
+        const previousText = document.querySelector('.score').textContent;
+        document.querySelector('.score').textContent = previousText + " You lost :(";
     }
     bgMusic.pause();
     bgMusic.currentTime = 0;
