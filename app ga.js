@@ -30,8 +30,8 @@ const questions = [
         answer: "Jameela"
     },
     {
-        question: "Whose favorite anime character is Vegeta?",
-        options: ["Hasan", "Salman", "Hamza", "Arthur"],
+        question: "Who has 741K followers on instagram?",
+        options: ["Zahra", "Fatima", "Hamza", "Arthur"],
         answer: "Arthur"
     },
     {
@@ -40,24 +40,34 @@ const questions = [
         answer: "16"
     },
     {
+        question: "Who likes participating in cycling races?",
+        options: ["Mohammed Kadem", "Mohammed Ali", "Abdullah Alshaikh", "Mahmood Fadhel"],
+        answer: "Mohammed Kadem"
+    },
+    {
+        question: "Who is a Marshal at the Bahrain International Circuit?",
+        options: ["Abdulrazaq Mohammed", "Ali Jawad", "Abdullah Alshaikh", "Abdullah Hisham"],
+        answer: "Abdullah Hisham"
+    },
+    {
         question: "Who famously said on the first day that his name is 'Sushi'?",
-        options: ["Ali", "Aqeel", "Salman", "Hamza"],
+        options: ["Ali", "Salman", "Aqeel", "Hamza"],
         answer: "Salman"
+    },
+    {
+        question: "Who was in module united nations?",
+        options: ["Mahmood Fadhel", "Mohammed Ali", "Abdullah Alshaikh", "Aqeel Muslem"],
+        answer: "Abdullah Alshaikh"
+    },
+     {
+        question: "Who came to bibf at 2 am because he forgot his charger?",
+        options: ["Husain Folath", "Yaseen Alzeiny", "Husain Saleh", "Hussain Alkaabi"],
+        answer: "Husain Saleh"
     },
     {
         question: "Who would most likely survive a zombie apocalypse — by coding a solution?",
         options: ["Kristina", "Arthur", "Abdullah", "All of them, obviously"],
         answer: "All of them, obviously"
-    },
-    {
-        question: "Who was in module united nations?",
-        options: ["Aqeel Muslem", "Mohammed Ali", "Abdullah Alshaikh", "Mahmood Fadhel"],
-        answer: "Abdullah Alshaikh"
-    },
-    {
-        question: "Who likes participating in cycling races?",
-        options: ["Mohammed Kadem", "Mohammed Ali", "Abdullah Alshaikh", "Mahmood Fadhel"],
-        answer: "Mohammed Kadem"
     },
 ];
 
@@ -126,6 +136,7 @@ function nextQuestion() {
     } else if (currentQuestionIndex === questions.length) {
         document.querySelector('.score').textContent = "Quiz over! Your final score: " + score;
         document.querySelector('.next-button').disabled = true; // Disable next button
+        winOrLose(); // Check win or lose condition
     }
 }
 
@@ -162,4 +173,17 @@ function handleIncorrectAnswer() {
         } 
         
     });
+}
+
+
+// win & lose logic
+function winOrLose() {
+    if ( score >= 7) {
+        document.querySelector('.score').textContent = "Congratulations! You won.";
+    }
+    else {
+        document.querySelector('.score').textContent = "You lost :( Better luck next time.";
+    }
+    bgMusic.pause();
+    bgMusic.currentTime = 0;
 }

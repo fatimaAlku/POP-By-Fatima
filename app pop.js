@@ -116,6 +116,7 @@ function nextQuestion() {
     } else if (currentQuestionIndex === questions.length) {
         document.querySelector('.score').textContent = "Quiz over! Your final score: " + score;
         document.querySelector('.next-button').disabled = true; // Disable next button
+        winOrLose(); // Check win or lose condition
     }
 }
 
@@ -152,4 +153,17 @@ function handleIncorrectAnswer() {
         } 
         
     });
+}
+
+
+// win & lose logic
+function winOrLose() {
+    if ( score >= 6) {
+        document.querySelector('.score').textContent = "Congratulations! You won.";
+    }
+    else {
+        document.querySelector('.score').textContent = "You lost :( Better luck next time.";
+    }
+    bgMusic.pause();
+    bgMusic.currentTime = 0;
 }
