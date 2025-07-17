@@ -65,6 +65,21 @@ const questions = [
         answer: "Husain Saleh"
     },
     {
+        question: "I am a nerd who loves coding and anime",
+        options: ["Husain Saleh", "Ahmed Alshaikh", "Ali Jawad", "Arthur Bernier"],
+        answer: "Arthur Bernier"
+    },
+    {
+        question: "Has been to 15 concerts?",
+        options: ["Fatima", "Mahmood", "Alia", "Abdulrazaq"],
+        answer: "Fatima"
+    },
+    {
+        question: "Had the prime minister visit his family's estate",
+        options: ["Abdulla Alshaikh", "Mohammed Adel", "Hussain Alkaabi", "Mohammed Kadem"],
+        answer: "Hussain Alkaabi"
+    },
+    {
         question: "Who would most likely survive a zombie apocalypse — by coding a solution?",
         options: ["Kristina", "Arthur", "Abdullah", "All of them, obviously"],
         answer: "All of them, obviously"
@@ -182,7 +197,7 @@ function handleIncorrectAnswer() {
 
 // win & lose logic
 function winOrLose() {
-    if ( score >= 7) {
+    if ( score >= 10) {
         const previousText = document.querySelector('.score').textContent;
         document.querySelector('.score').textContent = previousText + " Congratulations! You won.";
     }
